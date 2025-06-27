@@ -17,8 +17,31 @@ Roblox-TS bindings for [AdamMillsy/Inputter](https://github.com/AdamMillsy/Input
 
 ## Installation
 
+Run:
 ```
 npm i @rbxts-its-a-bit-random/inputter
+```
+
+And maks sure you have the `@rbxts-its-a-bit-random` org to your rojo project:
+```json
+"ReplicatedStorage": {
+	"$className": "ReplicatedStorage",
+	"rbxts_include": {
+		"$path": "include",
+		"node_modules": {
+			"$className": "Folder",
+			"@rbxts": {
+				"$path": "node_modules/@rbxts"
+			},
+            		"@rbxts-its-a-bit-random": {
+				"$path": "node_modules/@rbxts-its-a-bit-random"
+            		}
+		}
+	},
+	"TS": {
+		"$path": "out/shared"
+	}
+}
 ```
 
 ## Getting Started
