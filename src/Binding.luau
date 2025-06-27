@@ -1,6 +1,6 @@
 local UserInputService = game:GetService("UserInputService")
 
-local Signal = require(script.Parent.Parent.Signal)
+local Signal = require(script.Parent.Packages.Signal)
 local Types = require(script.Parent.Types)
 
 type Binding = Types.Binding

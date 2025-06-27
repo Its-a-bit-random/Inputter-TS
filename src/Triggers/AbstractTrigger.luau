@@ -6,8 +6,8 @@
 local AbstractTrigger = {}
 AbstractTrigger.__index = AbstractTrigger
 
-local Signal = require(script.Parent.Parent.Parent.Signal)
-local TableUtil = require(script.Parent.Parent.Parent.TableUtil)
+local Signal = require(script.Parent.Parent.Packages.Signal)
+local TableUtil = require(script.Parent.Parent.Packages.TableUtil)
 local Types = require(script.Parent.Parent.Types)
 type Trigger = Types.Trigger
 

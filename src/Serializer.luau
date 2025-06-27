@@ -1,4 +1,4 @@
-local TableUtil = require(script.Parent.Parent.TableUtil)
+local TableUtil = require(script.Parent.Packages.TableUtil)
 local HttpService = game:GetService("HttpService")
 
 local Serializer = {}

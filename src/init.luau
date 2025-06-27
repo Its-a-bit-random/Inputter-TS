@@ -1,4 +1,4 @@
-local Signal = require(script.Parent.Signal)
+local Signal = require(script.Packages.Signal)
 local Serializer = require(script.Serializer)
 
 local Types = require(script.Types)
@@ -10,11 +10,11 @@ export type Trigger = Types.Trigger
 -- Version is read off of the wally package folder name
 -- If you modify the package structure this may fail, so just manually set the version value below in the format "0.0.0"
 -- The version can be found wherever you downloaded the package, check the GitHub release
-local Version = script.Parent.Name:match("@(.+)$")
-if not Version or not Version:match("^%d+%.%d+%.%d+$") then
-	warn("Inputter version did not read correctly, please manually set it. defaulting to '0.0.0'")
-	Version = "0.0.0"
-end
+
+-- ROBLOX-TS DEVIATION:
+-- Currently the version is set manually becasue the package version will not be in the name
+-- of the file/folder its in
+local Version = "0.1.2"
 
 local Inputter = {}
 Inputter.__index = Inputter

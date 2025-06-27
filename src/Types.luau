@@ -1,4 +1,4 @@
-local Signal = require(script.Parent.Parent.Signal)
+local Signal = require(script.Parent.Packages.Signal)
 
 export type Signal<T...> = Signal.Signal<T...>
 
