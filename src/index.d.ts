@@ -3,6 +3,7 @@ import Signal from "./Packages/Signal";
 import { HOLD } from "./Triggers/HOLD";
 import { PRESS } from "./Triggers/PRESS";
 import { MULTIPLE_PRESS } from "./Triggers/MULTIPLE_PRESS";
+import { SHORT_PRESS } from "./Triggers/SHORT_PRESS";
 
 interface Inputter {
 	Name: string;
@@ -29,6 +30,7 @@ interface InputterConstructor {
 		HOLD: (bindingInfo: BindingInfo, holdTime: number) => HOLD;
 		PRESS: (bindingInfo: BindingInfo) => PRESS;
 		MULTIPLE_PRESS(bindingInfo: BindingInfo, PressCount: number, TimeFrame: number): MULTIPLE_PRESS;
+		SHORT_PRESS(bindingInfo: BindingInfo, maxPressTime: number): SHORT_PRESS;
 	};
 }
 
