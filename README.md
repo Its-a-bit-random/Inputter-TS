@@ -81,6 +81,13 @@ To view the documentation, please go to [this page](https://adammillsy.github.io
 
 Issues should be put in the original repo [here](https://github.com/AdamMillsy/Inputter/Issues)
 
+## TypeScript Port
+A Roblox-TS port of Inputter is now available here: https://github.com/Its-a-bit-random/Inputter-TS
+
+I am not a maintainer of this fork, but do endorse it.
+
+---
+
 ## License
 
 The original project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/) and maintained by **Adam Mills**.  
