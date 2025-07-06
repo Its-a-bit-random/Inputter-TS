@@ -29,8 +29,8 @@ interface InputterConstructor {
 	Trigger: {
 		HOLD: (bindingInfo: BindingInfo, holdTime: number) => HOLD;
 		PRESS: (bindingInfo: BindingInfo) => PRESS;
-		MULTIPLE_PRESS(bindingInfo: BindingInfo, PressCount: number, TimeFrame: number): MULTIPLE_PRESS;
-		SHORT_PRESS(bindingInfo: BindingInfo, maxPressTime: number): SHORT_PRESS;
+		MULTIPLE_PRESS: (bindingInfo: BindingInfo, PressCount: number, TimeFrame: number) => MULTIPLE_PRESS;
+		SHORT_PRESS: (bindingInfo: BindingInfo, maxPressTime: number) => SHORT_PRESS;
 	};
 }
 
