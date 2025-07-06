@@ -14,7 +14,7 @@ export type Trigger = Types.Trigger
 -- ROBLOX-TS DEVIATION:
 -- Currently the version is set manually becasue the package version will not be in the name
 -- of the file/folder its in
-local Version = "0.1.2"
+local Version = "0.1.3"
 
 local Inputter = {}
 Inputter.__index = Inputter
