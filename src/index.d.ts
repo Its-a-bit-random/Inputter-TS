@@ -9,13 +9,13 @@ interface Inputter {
 	Name: string;
 	Active: boolean;
 	Enabled: boolean;
-	ActiveTriggers: Trigger[];
 	OnActivated: Signal<() => void>;
 	OnDeactivated: Signal<() => void>;
+	Triggers: Trigger[];
 
-	AddInput: (this: Inputter, input: Trigger) => void;
-	RemoveInput: (this: Inputter, input: Trigger) => void;
-	GetAllInputs: (this: Inputter) => Trigger[];
+	AddTrigger: (this: Inputter, input: Trigger) => void;
+	RemoveTrigger: (this: Inputter, input: Trigger) => void;
+	GetAllTriggers: (this: Inputter) => Trigger[];
 	IsActive: (this: Inputter) => boolean;
 	Enable: (this: Inputter) => void;
 	Disable: (this: Inputter) => void;
